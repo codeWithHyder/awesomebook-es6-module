@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/085384e239.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Awesome Books with es6 modular approach</title>
+</head>
+<body>
+  <div class="container"> 
+    <!---------------- navbar that will display list,addbook and conatct info menus----------------------------------->
+    <nav class="navbar" id="navbar">
+        <div class="awesomebooktitle"><h1>Awesome Books</h1></div>
+        <ul class = "menuitems">
+            <li class="menuitem1 menuitem"><a href="#removebook">List</a></li>
+            <li class="menuitem2 menuitem"><a href="#addbook">Add new</a></li>
+            <li class="menuitem3 menuitem"><a href="#contactinfo">Contact</a></li>
+        </ul>
+    </nav>
+    <!---------------------- timer section----------------------------------------------------------------------------->
+    <div class="timersection">
+        <p class="headerTime" id="date-time"></p>
+    </div>
+    <!-------------------addbook section------------------------------------------------------------------------------->
+    <section class="addbook" id ="addbook">
+        <form class="addbookfrm">
+            <h2>Add new book</h2>
+            <input type="text" id="title" class ="title textbox" placeholder="Title" required>
+            <input type ="text" id="author" class = "author textbox" placeholder="Author" required>
+            <button type="submit" id="btnsubmit" class="btnsubmit">Add</button>
+        </form>
+    </section>
+
+    <!-----------------Removebook section--------------------------------------------------------------------------->
+    <section class="removebook" id = "removebook">
+        <h2 class="allbooks">All awesome books</h2>
+        <hr class="hrl">
+        <ul class="booklist" id="booklist">
+          
+        </ul>
+    </section>
+
+    <!-------------------------contact information--------------------------------------------------------------->
+    <section class="contactinfo" id="contactinfo">
+        <h2>Contact Information</h2>
+        <p>if you have question /query or just want to say "Hello"?</p>
+        <p>You can reach out to us</p>
+        <ul>
+        <li>Contact : +91 123456789</li>
+        <li>Email : myemail@gmail.com</li>
+        <li>Address: Country, City , Town</li>
+        </ul>
+    </section>
+    
+  </div>
+<!--------------------------footer sction--------------------------------------------------------------------->
+<footer class="footer" id="footer">
+    <p>Copy right <i class="fa-sharp fa-regular fa-copyright"></i> , All rights reserved with Ghulam Hyder</p>
+</footer>
+    <script type="module" src="index.js"></script>
+    
+    
+</body>
+</html>
